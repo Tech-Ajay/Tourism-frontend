@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Redirect,
-  Switch,
+  Switch
 } from 'react-router-dom';
 
 import Users from './user/pages/Users';
@@ -13,13 +13,13 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path='/' exact>
+        <Route path="/" exact>
           <Users />
         </Route>
-        <Route path='/places/new' exact>
+        <Route path="/places/new" exact>
           <NewPlace />
         </Route>
-        <Redirect to='/' />
+        <Redirect to="/" />
       </Switch>
     </Router>
   );
